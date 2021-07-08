@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/0f7bc315c6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main_page">
+            <header class="header">
+                <h1><img src="./images/logo_img.png" alt="X-box_logo"></h1>
+                <nav class="navigation">
+                    <ul class="nav-ul">
+                        <li class="dropdown nav-li">Games
+                            <ul class="dropdown-content">
+                                <li>Star Wars</li>
+                                <li>Call of Duty: WWII</li>
+                                <li>Forza MotorSport 7</li>
+
+                            </ul>
+
+                        </li>
+                        <li class="dropdown2 nav-li">Consoles
+                            <ul class="dropdown-content2">
+                                <li>Design Yours</li>
+                                <li>Explore Consoles & Accessories</li>
+
+                            </ul>
+                        </li>
+                        <li class="community nav-li">Community</li>
+                        <li class="search"><input type="search" placeholder="Search"></li>
+                    </ul>
+
+                </nav>
+                <span><i class="far fa-user user_icon"></i>MyXBOX</span>
+            </header>
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide image_slider_first">
+                        <div class="new_game">
+                            <div>
+                                <h2 class="game_title">Star Wars</h2>
+                                <p class="game_descr">Battlefront II</p>
+                            </div>
+                            <div class="main_slider_btns">
+                                <button class="trailer_btn">Watch Trailer</button>
+                                <button class="more_games_btn">Explore Games</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image_slider_second">
+                        <div class="new_game">
+                            <div>
+                                <h2 class="game_title">Call of Duty: WWII</h2>
+                                <p class="game_descr">Released on: 23/11/2017</p>
+                            </div>
+                            <div class="main_slider_btns">
+                                <button class="trailer_btn">Watch Trailer</button>
+                                <button class="more_games_btn">Explore Games</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide image_slider_third">
+                        <div class="new_game">
+                            <div>
+                                <h2 class="game_title">Forza MotorSport 7</h2>
+                                <p class="game_descr">Drive</p>
+                            </div>
+                            <div class="main_slider_btns">
+                                <button class="trailer_btn">Watch Trailer</button>
+                                <button class="more_games_btn">Explore Games</button>
+                            </div>
+                        </div>
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <main class="main-news">
+            <div class="main_news">
+                <div class="news_head">
+                    <img class="xbox_logo" src="./images/xbox icon.png" alt="icon_xbox">
+                    <h3 class="title_news">The best value</h3>
+                    <span class="descr_news">in games and entertainment</span>
+                </div>
+                <div class="news-cards">
+                    <div class="news_card">
+                        <div class="news_card_image">
+                            <img src="./images/card_img/xbox-one-x.png" alt="">
+                        </div>
+                        <div class="news_about">
+                            <h5 class="news_card_title">xbox one x</h5>
+                            <p class="news_card_descr">Faster Processing Smoother Gameplay</p>
+                            <button class="news_card_btn">Explore Consoles & Accessories</button>
+                        </div>
+                    </div>
+                    <div class="news_card">
+                        <div class="news_card_image">
+                            <img src="./images/card_img/mixer-logo.png" alt="">
+                        </div>
+                        <div class="news_about">
+                            <h5 class="news_card_title">mixer Streaming</h5>
+                            <p class="news_card_descr">The Next Generation Of Life Game Streaming</p>
+                            <button class="news_card_btn">Start Watching mixer</button>
+                        </div>
+                    </div>
+                    <div class="news_card">
+                        <div class="news_card_image">
+                            <img src="./images/card_img/1c93fdc8-0f06-4f34-a54c-7ac2a45c58ae.png" alt="">
+                        </div>
+                        <div class="news_about">
+                            <h5 class="news_card_title">Free Games Every Month</h5>
+                            <p class="news_card_descr">Get up to $700 in free games</p>
+                            <button class="news_card_btn">Get Free Games</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="games_xbox">
+                <h3 class="games_xbox_title">Exclusive games on XBOX</h3>
+                <div class="new-swiper">
+                    <div class="swiper-wrapper new_s_wrapper">
+                        <div class="swiper-slide">
+                            <div class="news_card news_card_slider">
+                                <div class="news_card_image">
+                                    <img src="./images/slider_games/img (1).png" alt="">
+                                </div>
+                                <div class="news_about">
+                                    <h5 class="news_card_title">Free Games Every Month</h5>
+                                    <p class="news_card_descr">Get up to $700 in free games</p>
+                                    <button class="news_card_btn">Get Free Games</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news_card news_card_slider">
+                                <div class="news_card_image">
+                                    <img src="./images/slider_games/img (2).png" alt="">
+                                </div>
+                                <div class="news_about">
+                                    <h5 class="news_card_title">Free Games Every Month</h5>
+                                    <p class="news_card_descr">Get up to $700 in free games</p>
+                                    <button class="news_card_btn">Get Free Games</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news_card news_card_slider">
+                                <div class="news_card_image">
+                                    <img src="./images/slider_games/img (3).png" alt="">
+                                </div>
+                                <div class="news_about">
+                                    <h5 class="news_card_title">Free Games Every Month</h5>
+                                    <p class="news_card_descr">Get up to $700 in free games</p>
+                                    <button class="news_card_btn">Get Free Games</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news_card news_card_slider">
+                                <div class="news_card_image">
+                                    <img src="./images/slider_games/img (4).png" alt="">
+                                </div>
+                                <div class="news_about">
+                                    <h5 class="news_card_title">Free Games Every Month</h5>
+                                    <p class="news_card_descr">Get up to $700 in free games</p>
+                                    <button class="news_card_btn">Get Free Games</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="store_btn_box">
+                    <button class="more_games_btn store_btn">XBOX Store</button>
+                </div>
+            </div>
+            <div class="design_xbox">
+                <div class="design_xbox_cover">
+                    <div class="about_design">
+                        <div>
+                            <h2 class="design_xbox_title">Xbox Design Lab</h2>
+                            <p class="design_xbox_descr">Make yours one in a billion with new colors, metallic finishes and rubberized grips.</p>
+                        </div>
+                        <div class="design_btns">
+                            <button class="design_btn">Design Yours</button>
+                            <button class="accessories_btn">Explore Consoles & Accessories</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="main_footer">
+                <div>
+                    <ul class="list_footer">
+                        <li class="footer_ul_title">XBOX</li>
+                        <li>Support</li>
+                        <li>Contact us</li>
+                        <li>Privacy & cookies </li>
+                        <li>Terms of use </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list_footer">
+                        <li class="footer_ul_title">Developers</li>
+                        <li>Games</li>
+                        <li>Windows 10</li>
+                        <li>Creators Program</li>
+                        <li>Designed for XBOX</li>
+                    </ul>
+                </div>
+                <div class="social_icons_container">
+                    <ul class="list_footer">
+                        <li class="footer_ul_title">Follow Us</li>
+                        <li class="social_icons"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copywrite">
+                <span>English (United States)</span>
+                <span>© Microsoft 2017</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
