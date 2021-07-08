@@ -58,6 +58,7 @@ var swiperNew = new Swiper(".new-swiper", {
         },
     }
 });
+var swiperr = new Swiper(".mySwiper", {});
 
 // let hiddenMenuGame = document.querySelector('.hidden_menu');
 // let gamesBtn = document.querySelector('.games');
