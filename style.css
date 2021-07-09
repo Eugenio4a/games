@@ -1,626 +1,667 @@
-                                                                                          :root {
-                                                                                             --head-color: #373A3C;
-                                                                                             --html-color: #585858;
-                                                                                             --card-text-color: #435766;
-                                                                                             --white: #ffff;
-                                                                                             --white-text: rgba(255, 255, 255, 0.5);
-                                                                                             --green: #8DD83D;
-                                                                                         }
-                                                                                         
-                                                                                         html {
-                                                                                             background-color: var(--html-color);
-                                                                                         }
-                                                                                         
-                                                                                         ul>li {
-                                                                                             list-style: none;
-                                                                                         }
-                                                                                         
-                                                                                         .wrapper {
-                                                                                             width: 1400px;
-                                                                                             margin: 0 auto;
-                                                                                             font-size: 16px;
-                                                                                         }
-                                                                                         /* .main_page {
+html {
+    background-color: var(--html-color);
+}
+
+:root {
+    --head-color: #373A3C;
+    --html-color: #585858;
+    --card-text-color: #435766;
+    --white: #ffff;
+    --white-text: rgba(255, 255, 255, 0.5);
+    --green: #8DD83D;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+
+/* .main_page {
     height: 100vh;
 } */
-                                                                                         /* header */
-                                                                                         
-                                                                                         .header {
-                                                                                             background-color: var(--head-color);
-                                                                                             color: var(--white-text);
-                                                                                             display: flex;
-                                                                                             justify-content: space-around;
-                                                                                             align-items: center;
-                                                                                         }
-                                                                                         
-                                                                                         .navigation .nav-ul {
-                                                                                             display: flex;
-                                                                                             align-items: center;
-                                                                                         }
-                                                                                         
-                                                                                         .navigation .nav-li {
-                                                                                             padding: 0px 30px;
-                                                                                             font-size: 18px;
-                                                                                         }
-                                                                                         
-                                                                                         .navigation .nav-li:hover {
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         
-                                                                                         .user_icon {
-                                                                                             font-size: 21px;
-                                                                                             color: var(--green);
-                                                                                             padding-right: 5px;
-                                                                                         }
-                                                                                         /* menu */
-                                                                                         
-                                                                                         .menu_list {
-                                                                                             display: flex;
-                                                                                             flex-direction: column;
-                                                                                             padding: 0;
-                                                                                             margin: 0;
-                                                                                         }
-                                                                                         
-                                                                                         .hidden_menu {
-                                                                                             display: flex;
-                                                                                         }
-                                                                                         
-                                                                                         .nav_ul {
-                                                                                             position: relative;
-                                                                                         }
-                                                                                         
-                                                                                         .dropdown {
-                                                                                             position: relative;
-                                                                                             display: inline-block;
-                                                                                         }
-                                                                                         
-                                                                                         .dropdown-content,
-                                                                                         .dropdown-content2 {
-                                                                                             visibility: hidden;
-                                                                                             position: absolute;
-                                                                                             display: flex;
-                                                                                             flex-wrap: wrap;
-                                                                                             background-color: var(--head-color);
-                                                                                             color: var(--white-text);
-                                                                                             flex-direction: column;
-                                                                                             z-index: 20;
-                                                                                             padding: 0;
-                                                                                             min-width: 200px;
-                                                                                             max-width: 300px;
-                                                                                         }
-                                                                                         
-                                                                                         .dropdown-content {
-                                                                                             min-width: 200px;
-                                                                                             max-width: 250px;
-                                                                                             padding-top: 20px;
-                                                                                             left: 20px;
-                                                                                         }
-                                                                                         
-                                                                                         .dropdown-content2 {
-                                                                                             min-width: 200px;
-                                                                                             max-width: 250px;
-                                                                                             padding-top: 20px;
-                                                                                         }
-                                                                                         
-                                                                                         .dropdown-content>li,
-                                                                                         .dropdown-content2>li {
-                                                                                             padding: 10px;
-                                                                                         }
-                                                                                         
-                                                                                         .dropdown-content>li:hover,
-                                                                                         .dropdown-content2>li:hover {
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         
-                                                                                         .dropdown:hover .dropdown-content {
-                                                                                             visibility: visible;
-                                                                                         }
-                                                                                         
-                                                                                         .dropdown2:hover .dropdown-content2 {
-                                                                                             visibility: visible;
-                                                                                         }
-                                                                                         /* .menu_game {
+
+
+/* header */
+
+.header {
+    background-color: var(--head-color);
+    color: var(--white-text);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation .nav-ul {
+    display: flex;
+    align-items: center;
+}
+
+.navigation .nav-li {
+    padding: 0px 30px;
+    font-size: 18px;
+}
+
+.navigation .nav-li:hover {
+    color: var(--white);
+}
+
+.user_icon {
+    font-size: 21px;
+    color: var(--green);
+    padding-right: 5px;
+}
+
+
+/* menu */
+
+.menu_list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden_menu {
+    display: flex;
+}
+
+.nav_ul {
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content,
+.dropdown-content2 {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--head-color);
+    color: var(--white-text);
+    flex-direction: column;
+    z-index: 20;
+    padding: 0;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.dropdown-content {
+    min-width: 200px;
+    max-width: 250px;
+    padding-top: 20px;
+    left: 20px;
+}
+
+.dropdown-content2 {
+    min-width: 200px;
+    max-width: 250px;
+    padding-top: 20px;
+}
+
+.dropdown-content>li,
+.dropdown-content2>li {
+    padding: 10px;
+}
+
+.dropdown-content>li:hover,
+.dropdown-content2>li:hover {
+    color: var(--white);
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    visibility: visible;
+}
+
+
+/* .menu_game {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 20;
 } */
-                                                                                         /* slider_main  */
-                                                                                         
-                                                                                         .image_slider_first {
-                                                                                             background-image: url(./images/Star-Wars-Battlefront-II-combat.png);
-                                                                                             background-repeat: no-repeat;
-                                                                                             background-position: center;
-                                                                                             background-size: cover;
-                                                                                         }
-                                                                                         
-                                                                                         .image_slider_second {
-                                                                                             background-image: url(./images/CoD.f8a4bf70.png);
-                                                                                             background-repeat: no-repeat;
-                                                                                             background-position: center;
-                                                                                             background-size: cover;
-                                                                                         }
-                                                                                         
-                                                                                         .image_slider_third {
-                                                                                             background-image: url(./images/Forza7.dac54913.jpg);
-                                                                                             background-repeat: no-repeat;
-                                                                                             background-position: center;
-                                                                                             background-size: cover;
-                                                                                         }
-                                                                                         
-                                                                                         .swiper-container {
-                                                                                             width: 100%;
-                                                                                             height: 650px;
-                                                                                             position: relative;
-                                                                                         }
-                                                                                         /* slider_info */
-                                                                                         
-                                                                                         .desc_none {
-                                                                                             display: none;
-                                                                                         }
-                                                                                         
-                                                                                         .swiper-button-prev:after,
-                                                                                         .swiper-button-next:after {
-                                                                                             color: var(--green);
-                                                                                         }
-                                                                                         
-                                                                                         .swiper-pagination-bullet.swiper-pagination-bullet-active {
-                                                                                             background-color: var(--green) !important;
-                                                                                         }
-                                                                                         
-                                                                                         .new_game {
-                                                                                             color: var(--white);
-                                                                                             position: absolute;
-                                                                                             left: 850px;
-                                                                                             top: 200px;
-                                                                                         }
-                                                                                         
-                                                                                         .game_title {
-                                                                                             font-size: 34px;
-                                                                                             margin-bottom: 0;
-                                                                                         }
-                                                                                         
-                                                                                         .game_descr {
-                                                                                             margin-top: 10px;
-                                                                                             font-size: 22px;
-                                                                                         }
-                                                                                         
-                                                                                         .main_slider_btns>button {
-                                                                                             width: 150px;
-                                                                                             height: 40px;
-                                                                                             border-radius: 4px;
-                                                                                             margin-top: 50px;
-                                                                                         }
-                                                                                         
-                                                                                         .trailer_btn {
-                                                                                             background-color: var(--green);
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         
-                                                                                         .more_games_btn {
-                                                                                             background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         /* main-content, news */
-                                                                                         
-                                                                                         .xbox_logo {
-                                                                                             width: 63px;
-                                                                                             height: 64px;
-                                                                                         }
-                                                                                         
-                                                                                         .main_news {
-                                                                                             background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
-                                                                                             padding: 50px 50px;
-                                                                                         }
-                                                                                         
-                                                                                         .news_head {
-                                                                                             display: flex;
-                                                                                             justify-content: center;
-                                                                                             flex-direction: column;
-                                                                                             align-items: center;
-                                                                                         }
-                                                                                         
-                                                                                         .title_news {
-                                                                                             font-size: 54px;
-                                                                                             color: var(--white);
-                                                                                             margin: 0px;
-                                                                                         }
-                                                                                         
-                                                                                         .descr_news {
-                                                                                             font-size: 43px;
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         /* news_Card */
-                                                                                         
-                                                                                         .news-cards {
-                                                                                             margin-top: 50px;
-                                                                                             display: flex;
-                                                                                             justify-content: space-around;
-                                                                                         }
-                                                                                         
-                                                                                         .news_card {
-                                                                                             margin: 0 auto;
-                                                                                             background-color: var(--white);
-                                                                                             width: 320px;
-                                                                                             color: var(--card-text-color);
-                                                                                             border: 1px solid var(--green);
-                                                                                             display: flex;
-                                                                                             flex-direction: column;
-                                                                                             justify-content: flex-end;
-                                                                                         }
-                                                                                         
-                                                                                         .news_card_image {
-                                                                                             width: 100%;
-                                                                                             height: 181px;
-                                                                                             display: flex;
-                                                                                             justify-content: center;
-                                                                                             align-items: center;
-                                                                                         }
-                                                                                         
-                                                                                         .news_card_title {
-                                                                                             font-size: 18px;
-                                                                                             text-transform: uppercase;
-                                                                                         }
-                                                                                         
-                                                                                         .news_about {
-                                                                                             padding: 0px 20px 20px 20px;
-                                                                                         }
-                                                                                         
-                                                                                         .news_card_descr {
-                                                                                             font-size: 24px;
-                                                                                         }
-                                                                                         
-                                                                                         .news_card_btn {
-                                                                                             color: var(--white);
-                                                                                             width: 100%;
-                                                                                             height: 60px;
-                                                                                             background-color: var(--green);
-                                                                                         }
-                                                                                         /* exclusive games section */
-                                                                                         
-                                                                                         .games_xbox_title {
-                                                                                             margin: 0;
-                                                                                             padding: 50px 100px;
-                                                                                             font-size: 30px;
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         
-                                                                                         .games_xbox {
-                                                                                             position: relative;
-                                                                                         }
-                                                                                         
-                                                                                         .games_xbox::before {
-                                                                                             content: '';
-                                                                                             width: 100%;
-                                                                                             height: 100%;
-                                                                                             top: 0;
-                                                                                             right: 0;
-                                                                                             position: absolute;
-                                                                                             width: 100%;
-                                                                                             height: 100%;
-                                                                                             background-image: url(./images/CoD.f8a4bf70.png);
-                                                                                             z-index: -1;
-                                                                                             background-size: cover;
-                                                                                             opacity: .3;
-                                                                                         }
-                                                                                         
-                                                                                         .new-swiper {
-                                                                                             margin: 0 auto;
-                                                                                             width: 1400px;
-                                                                                             overflow: hidden;
-                                                                                         }
-                                                                                         
-                                                                                         .new-slide {
-                                                                                             padding: 0px 40px;
-                                                                                         }
-                                                                                         
-                                                                                         .swiper-slide>.news_card>.news_card_image>img {
-                                                                                             width: 100%;
-                                                                                         }
-                                                                                         
-                                                                                         .swiper-container-3d .swiper-slide-shadow-left,
-                                                                                         .swiper-container-3d .swiper-slide-shadow-right {
-                                                                                             background: transparent !important;
-                                                                                         }
-                                                                                         
-                                                                                         .store_btn_box {
-                                                                                             text-align: center;
-                                                                                         }
-                                                                                         
-                                                                                         .store_btn {
-                                                                                             width: 150px;
-                                                                                             height: 50px;
-                                                                                             margin-top: 50px;
-                                                                                             margin-bottom: 50px;
-                                                                                         }
-                                                                                         /* design xbox container */
-                                                                                         
-                                                                                         .design_xbox {
-                                                                                             width: 100%;
-                                                                                             background-image: url(./images/Rectangle.png);
-                                                                                             background-size: cover;
-                                                                                             ;
-                                                                                         }
-                                                                                         
-                                                                                         .design_xbox_cover {
-                                                                                             background-image: url(./images/Rectangle-1.png);
-                                                                                             background-size: cover;
-                                                                                         }
-                                                                                         
-                                                                                         .about_design {
-                                                                                             width: 40%;
-                                                                                             padding: 50px 0 50px 150px;
-                                                                                             z-index: 2;
-                                                                                         }
-                                                                                         
-                                                                                         .design_xbox_title {
-                                                                                             margin-top: 0;
-                                                                                             font-size: 48px;
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         
-                                                                                         .design_btns {
-                                                                                             display: flex;
-                                                                                         }
-                                                                                         
-                                                                                         .design_btn {
-                                                                                             height: 50px;
-                                                                                             background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
-                                                                                             color: var(--white);
-                                                                                             padding: 20px;
-                                                                                             display: flex;
-                                                                                             align-items: center;
-                                                                                         }
-                                                                                         
-                                                                                         .accessories_btn {
-                                                                                             height: 50px;
-                                                                                             background-color: var(--green);
-                                                                                             color: var(--white);
-                                                                                             margin-left: 20px;
-                                                                                         }
-                                                                                         
-                                                                                         .design_xbox_descr {
-                                                                                             font-size: 25px;
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         /* footer */
-                                                                                         
-                                                                                         .footer {
-                                                                                             background-color: var(--head-color);
-                                                                                         }
-                                                                                         
-                                                                                         .main_footer {
-                                                                                             display: flex;
-                                                                                             justify-content: space-around;
-                                                                                         }
-                                                                                         
-                                                                                         .footer_ul_title {
-                                                                                             font-size: 18px;
-                                                                                             color: var(--green);
-                                                                                             font-weight: bold;
-                                                                                             padding-bottom: 10px;
-                                                                                             text-align: center;
-                                                                                         }
-                                                                                         
-                                                                                         .list_footer>li:not(.footer_ul_title) {
-                                                                                             padding: 10px 0;
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         
-                                                                                         .social_icons i {
-                                                                                             padding: 5px;
-                                                                                             font-size: 25px;
-                                                                                             color: var(--green);
-                                                                                         }
-                                                                                         
-                                                                                         .copywrite {
-                                                                                             width: 90%;
-                                                                                             border-top: 1px solid var(--white-text);
-                                                                                             margin: 0 auto;
-                                                                                             display: flex;
-                                                                                             justify-content: space-between;
-                                                                                         }
-                                                                                         
-                                                                                         .copywrite>span {
-                                                                                             padding: 15px 15px;
-                                                                                             color: var(--white);
-                                                                                         }
-                                                                                         
-                                                                                         @media (max-width: 1024px) {
-                                                                                             .wrapper {
-                                                                                                 width: 1024px;
-                                                                                                 /* min-width: 800px; */
-                                                                                             }
-                                                                                             .new_game {
-                                                                                                 color: var(--white);
-                                                                                                 position: absolute;
-                                                                                                 left: 500px;
-                                                                                                 top: 200px;
-                                                                                             }
-                                                                                             .new-swiper {
-                                                                                                 width: 1024px;
-                                                                                             }
-                                                                                             .news_card {
-                                                                                                 margin: 10px;
-                                                                                             }
-                                                                                             .news_card_image {
-                                                                                                 height: auto
-                                                                                             }
-                                                                                             .store_btn {
-                                                                                                 margin-bottom: 40px;
-                                                                                             }
-                                                                                             .header {
-                                                                                                 justify-content: center;
-                                                                                             }
-                                                                                             .far.fa-user.user_icon {
-                                                                                                 padding-left: 20px;
-                                                                                             }
-                                                                                             .navigation .nav-li {
-                                                                                                 font-size: 20px;
-                                                                                             }
-                                                                                             .search {
-                                                                                                 font-size: 20px;
-                                                                                             }
-                                                                                             .desc_none {
-                                                                                                 display: none;
-                                                                                             }
-                                                                                             .mob_swiper_cont {
-                                                                                                 height: 620px
-                                                                                             }
-                                                                                             .navigation {
-                                                                                                 display: none;
-                                                                                             }
-                                                                                             .header {
-                                                                                                 display: flex;
-                                                                                                 justify-content: space-between;
-                                                                                                 padding: 0 50px;
-                                                                                             }
-                                                                                         }
-                                                                                         
-                                                                                         @media(max-width: 760px) {
-                                                                                             .news_card_slider {
-                                                                                                 width: 50%;
-                                                                                                 margin: 0 auto;
-                                                                                             }
-                                                                                             .mob_swiper_cont {
-                                                                                                 height: 850px;
-                                                                                             }
-                                                                                         }
-                                                                                         
-                                                                                         @media (max-width: 620px) {
-                                                                                             .wrapper {
-                                                                                                 width: 620px;
-                                                                                             }
-                                                                                             .web_none {
-                                                                                                 display: none;
-                                                                                             }
-                                                                                             .news_card_slider {
-                                                                                                 margin: 0 auto;
-                                                                                                 width: 400px;
-                                                                                             }
-                                                                                             .header {
-                                                                                                 justify-content: center;
-                                                                                             }
-                                                                                             .main_footer {
-                                                                                                 font-size: 20px;
-                                                                                                 flex-wrap: wrap-reverse;
-                                                                                             }
-                                                                                             .main_footer div {
-                                                                                                 width: 50%;
-                                                                                                 text-align: center;
-                                                                                             }
-                                                                                             .footer_ul_title,
-                                                                                             .social_icons>i {
-                                                                                                 font-size: 30px;
-                                                                                             }
-                                                                                             .copywrite span {
-                                                                                                 font-size: 20px;
-                                                                                             }
-                                                                                             .list_footer {
-                                                                                                 padding: 0;
-                                                                                             }
-                                                                                             .news-cards {
-                                                                                                 flex-wrap: wrap;
-                                                                                                 align-items: center;
-                                                                                             }
-                                                                                             .news_card_image {
-                                                                                                 height: 250px;
-                                                                                             }
-                                                                                             .news_card {
-                                                                                                 padding: 20px;
-                                                                                                 width: 350px;
-                                                                                             }
-                                                                                             .about_design {
-                                                                                                 width: auto;
-                                                                                                 padding: 150px 50px;
-                                                                                                 z-index: 2;
-                                                                                                 text-align: center;
-                                                                                             }
-                                                                                             .design_btns {
-                                                                                                 justify-content: center;
-                                                                                             }
-                                                                                             .design_xbox_title {
-                                                                                                 font-size: 40px;
-                                                                                                 margin-bottom: 10px;
-                                                                                             }
-                                                                                             .design_xbox_descr {
-                                                                                                 font-size: 25px;
-                                                                                             }
-                                                                                             .design_xbox_cover,
-                                                                                             .design_xbox {
-                                                                                                 background-position: center;
-                                                                                             }
-                                                                                             .design_btn,
-                                                                                             .accessories_btn {
-                                                                                                 width: 50%;
-                                                                                                 height: 60px;
-                                                                                                 font-size: 20px;
-                                                                                                 justify-content: center;
-                                                                                             }
-                                                                                             .store_btn {
-                                                                                                 width: 40%;
-                                                                                                 font-size: 20px;
-                                                                                                 height: 60px;
-                                                                                             }
-                                                                                             .news_card_btn {
-                                                                                                 font-size: 20px;
-                                                                                                 height: 60px;
-                                                                                             }
-                                                                                             .news_card_title {
-                                                                                                 font-size: 20px;
-                                                                                             }
-                                                                                             .xbox_logo {
-                                                                                                 width: 111px;
-                                                                                                 height: 110px;
-                                                                                             }
-                                                                                             .title_news {
-                                                                                                 font-size: 45px;
-                                                                                             }
-                                                                                             .descr_news {
-                                                                                                 font-size: 43px;
-                                                                                             }
-                                                                                             .news_card_image img {
-                                                                                                 width: 80%;
-                                                                                             }
-                                                                                             .news_card_descr {
-                                                                                                 font-size: 30px;
-                                                                                             }
-                                                                                             .game_title {
-                                                                                                 font-size: 60px;
-                                                                                             }
-                                                                                             .game_descr {
-                                                                                                 font-size: 38px;
-                                                                                             }
-                                                                                             .main_slider_btns>button {
-                                                                                                 width: 100%;
-                                                                                                 height: 70px;
-                                                                                                 margin: 20px 0;
-                                                                                                 font-size: 30px;
-                                                                                                 display: none;
-                                                                                             }
-                                                                                             .new_game {
-                                                                                                 left: 220px;
-                                                                                                 top: 350px;
-                                                                                             }
-                                                                                             .navigation {
-                                                                                                 display: none;
-                                                                                             }
-                                                                                             .header {
-                                                                                                 display: flex;
-                                                                                                 justify-content: space-between;
-                                                                                                 padding: 0 50px;
-                                                                                             }
-                                                                                             h1 img {
-                                                                                                 width: 150px;
-                                                                                             }
-                                                                                             .desc_none {
-                                                                                                 display: block;
-                                                                                             }
-                                                                                             .games_xbox_title {
-                                                                                                 font-size: 45px;
-                                                                                                 text-align: center;
-                                                                                             }
-                                                                                             .mob_swiper_cont {
-                                                                                                 height: 1000px
-                                                                                             }
-                                                                                         }
+
+
+/* slider_main  */
+
+.image_slider_first {
+    background-image: url(./images/Star-Wars-Battlefront-II-combat.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_slider_second {
+    background-image: url(./images/CoD.f8a4bf70.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image_slider_third {
+    background-image: url(./images/Forza7.dac54913.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 650px;
+    position: relative;
+}
+
+
+/* slider_info */
+
+.desc_none {
+    display: none;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    color: var(--green);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--green) !important;
+}
+
+.new_game {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.game_title {
+    font-size: 34px;
+    margin-bottom: 0;
+}
+
+.game_descr {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.main_slider_btns>button {
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+.trailer_btn {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.more_games_btn {
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    color: var(--white);
+}
+
+
+/* main-content, news */
+
+.xbox_logo {
+    width: 63px;
+    height: 64px;
+}
+
+.main_news {
+    background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+    padding: 50px 50px;
+}
+
+.news_head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_news {
+    font-size: 54px;
+    color: var(--white);
+    margin: 0px;
+}
+
+.descr_news {
+    font-size: 43px;
+    color: var(--white);
+}
+
+
+/* news_Card */
+
+.news-cards {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news_card {
+    margin: 10px auto;
+    background-color: var(--white);
+    width: 320px;
+    color: var(--card-text-color);
+    border: 1px solid var(--green);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.news_card_image {
+    width: 100%;
+    height: 181px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news_card_title {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.news_about {
+    padding: 0px 20px 20px 20px;
+}
+
+.news_card_descr {
+    font-size: 24px;
+}
+
+.news_card_btn {
+    color: var(--white);
+    width: 100%;
+    height: 60px;
+    background-color: var(--green);
+}
+
+
+/* exclusive games section */
+
+.games_xbox_title {
+    margin: 0;
+    padding: 50px 100px;
+    font-size: 30px;
+    color: var(--white);
+}
+
+.games_xbox {
+    position: relative;
+}
+
+.games_xbox::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/CoD.f8a4bf70.png);
+    z-index: -1;
+    background-size: cover;
+    opacity: .3;
+}
+
+.new-swiper {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.new-slide {
+    padding: 0px 40px;
+}
+
+.swiper-slide>.news_card>.news_card_image>img {
+    width: 100%;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background: transparent !important;
+}
+
+.store_btn_box {
+    text-align: center;
+}
+
+.store_btn {
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* design xbox container */
+
+.design_xbox {
+    width: 100%;
+    background-image: url(./images/Rectangle.png);
+    background-size: cover;
+    ;
+}
+
+.design_xbox_cover {
+    background-image: url(./images/Rectangle-1.png);
+    background-size: cover;
+}
+
+.about_design {
+    width: 40%;
+    padding: 50px 0 50px 150px;
+    z-index: 2;
+}
+
+.design_xbox_title {
+    margin-top: 0;
+    font-size: 48px;
+    color: var(--white);
+}
+
+.design_btns {
+    display: flex;
+}
+
+.design_btn {
+    height: 50px;
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.accessories_btn {
+    height: 50px;
+    background-color: var(--green);
+    color: var(--white);
+    margin-left: 20px;
+}
+
+.design_xbox_descr {
+    font-size: 25px;
+    color: var(--white);
+}
+
+
+/* footer */
+
+.footer {
+    background-color: var(--head-color);
+}
+
+.main_footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_ul_title {
+    font-size: 18px;
+    color: var(--green);
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.list_footer>li:not(.footer_ul_title) {
+    padding: 10px 0;
+    color: var(--white);
+}
+
+.social_icons i {
+    padding: 5px;
+    font-size: 25px;
+    color: var(--green);
+}
+
+.copywrite {
+    width: 90%;
+    border-top: 1px solid var(--white-text);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copywrite>span {
+    padding: 15px 15px;
+    color: var(--white);
+}
+
+@media (max-width: 1250px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .navigation {
+        display: none;
+    }
+    .new_game {
+        left: 35%;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+
+
+/*  
+       .new_game {
+           color: var(--white);
+           position: absolute;
+           left: 500px;
+           top: 200px;
+       }
+       .new-swiper {
+           width: 100%;
+       }
+       .news_card {
+           margin: 10px;
+       }
+       .news_card_image {
+           height: auto
+       }
+       .store_btn {
+           margin-bottom: 40px;
+       }
+       .header {
+           justify-content: center;
+       }
+       .far.fa-user.user_icon {
+           padding-left: 20px;
+       }
+       .navigation .nav-li {
+           font-size: 20px;
+       }
+       .search {
+           font-size: 20px;
+       }
+       .desc_none {
+           display: none;
+       }
+       .mob_swiper_cont {
+           height: 620px
+       }
+       .navigation {
+           display: none;
+       }
+       .header {
+           display: flex;
+           justify-content: space-between;
+           padding: 0 50px;
+       }
+   }
+   
+   @media(max-width: 760px) {
+       .news_card_slider {
+           width: 50%;
+           margin: 0 auto;
+       }
+       .mob_swiper_cont {
+           height: 850px;
+       }
+   }
+   
+   @media (max-width: 620px) {
+       .wrapper {
+           width: 620px;
+       }
+       .web_none {
+           display: none;
+       }
+       .news_card_slider {
+           margin: 0 auto;
+           width: 400px;
+       }
+       .header {
+           justify-content: center;
+       }
+       .main_footer {
+           font-size: 20px;
+           flex-wrap: wrap-reverse;
+       }
+       .main_footer div {
+           width: 50%;
+           text-align: center;
+       }
+       .footer_ul_title,
+       .social_icons>i {
+           font-size: 30px;
+       }
+       .copywrite span {
+           font-size: 20px;
+       }
+       .list_footer {
+           padding: 0;
+       }
+       .news-cards {
+           flex-wrap: wrap;
+           align-items: center;
+       }
+       .news_card_image {
+           height: 250px;
+       }
+       .news_card {
+           padding: 20px;
+           width: 350px;
+       }
+       .about_design {
+           width: auto;
+           padding: 150px 50px;
+           z-index: 2;
+           text-align: center;
+       }
+       .design_btns {
+           justify-content: center;
+       }
+       .design_xbox_title {
+           font-size: 40px;
+           margin-bottom: 10px;
+       }
+       .design_xbox_descr {
+           font-size: 25px;
+       }
+       .design_xbox_cover,
+       .design_xbox {
+           background-position: center;
+       }
+       .design_btn,
+       .accessories_btn {
+           width: 50%;
+           height: 60px;
+           font-size: 20px;
+           justify-content: center;
+       }
+       .store_btn {
+           width: 40%;
+           font-size: 20px;
+           height: 60px;
+       }
+       .news_card_btn {
+           font-size: 20px;
+           height: 60px;
+       }
+       .news_card_title {
+           font-size: 20px;
+       }
+       .xbox_logo {
+           width: 111px;
+           height: 110px;
+       }
+       .title_news {
+           font-size: 45px;
+       }
+       .descr_news {
+           font-size: 43px;
+       }
+       .news_card_image img {
+           width: 80%;
+       }
+       .news_card_descr {
+           font-size: 30px;
+       }
+       .game_title {
+           font-size: 60px;
+       }
+       .game_descr {
+           font-size: 38px;
+       }
+       .main_slider_btns>button {
+           width: 100%;
+           height: 70px;
+           margin: 20px 0;
+           font-size: 30px;
+           display: none;
+       }
+       .new_game {
+           left: 220px;
+           top: 350px;
+       }
+       .navigation {
+           display: none;
+       }
+       .header {
+           display: flex;
+           justify-content: space-between;
+           padding: 0 50px;
+       }
+       h1 img {
+           width: 150px;
+       }
+       .desc_none {
+           display: block;
+       }
+       .games_xbox_title {
+           font-size: 45px;
+           text-align: center;
+       }
+       .mob_swiper_cont {
+           height: 1000px
+       }
+   } */

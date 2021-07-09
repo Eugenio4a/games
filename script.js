@@ -39,6 +39,7 @@ var swiperNew = new Swiper(".new-swiper", {
             },
         },
         768: {
+
             slidesPerView: 3,
             coverflowEffect: {
                 rotate: 230,
@@ -58,7 +59,7 @@ var swiperNew = new Swiper(".new-swiper", {
         },
     }
 });
-var swiperr = new Swiper(".mySwiper", {});
+// var swiperr = new Swiper(".mySwiper", {});
 
 // let hiddenMenuGame = document.querySelector('.hidden_menu');
 // let gamesBtn = document.querySelector('.games');
