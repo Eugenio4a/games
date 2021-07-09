@@ -4,10 +4,10 @@ const swiper = new Swiper('.swiper-container', {
     pagination: {
         el: '.swiper-pagination',
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -27,6 +27,7 @@ var swiperNew = new Swiper(".new-swiper", {
         rotate: 230,
         depth: 500,
     },
+
 
     breakpoints: {
         640: {
@@ -49,6 +50,7 @@ var swiperNew = new Swiper(".new-swiper", {
             },
         },
         1024: {
+
             slidesPerView: 3,
             coverflowEffect: {
                 rotate: 230,
